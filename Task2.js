@@ -1,5 +1,5 @@
 // How do I run this script? 
-// node Task2.ts    
+// node Task2.js    
 
 todoList = [
     "Apply to y/cs!",
@@ -26,6 +26,9 @@ todoList = [
 function deleteTodo(index) {
     console.log("Before: " + todoList)
     // YOUR CODE HERE
+    if (index >= 0 && index < todoList.length) { //makes sure that the index is in the domain of todoList
+        const firstHalf = todoList.splice(index, 1) //Goes to value at the index of the array, and removes 1 value
+    }
     console.log("After:" + todoList)
 }
 

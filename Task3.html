@@ -63,7 +63,9 @@
             
             // Add non-empty string todos to the todo list
             // YOUR CODE HERE 
-
+            if (createdTodo.length > 0){ // Checks to make sure the string is non-empty
+                addTodo(createdTodo); // Adds createdTodo from filtered input
+            }
             // reset the input value after add todo is clicked.
             todoInput.value = '';
         });
@@ -90,11 +92,16 @@
 
         function deleteTodo(index) {
             // YOUR CODE HERE (recycle your work from former tasks)
+            if (index >= 0 && index < todoList.length) { //makes sure that the index is in the domain of todoList
+                const firstHalf = todoList.splice(index, 1) //Goes to value at the index of the array, and removes 1 value
+                }
             refreshTodoList()
         }
 
         function addTodo(todo) {
             // YOUR CODE HERE (recycle your work from former tasks)
+            // This function takes in a String 'todoString' and adds it to the todoList
+            todoList.push(todo);
             refreshTodoList()
         }
     </script>

@@ -23,6 +23,15 @@ const todoList = [];
  */
 function addAndPrintTodos() {
     // YOUR CODE HERE
+    //This function adds the set defined tasks and creates a for loop to print, including line gaps using \n
+    todoList.push("1. Apply to y/cs!") //adds 1st todo list item 
+    todoList.push("2. Pick out my classes")//adds 2nd todo list item 
+    todoList.push("3. Have dinner with my suite") //adds 3rd todo list item 
+    console.log("TODOS: ") //Prints out title: TODOS:
+    for (let i=0; i < todoList.length; i++) { //for loop that traverses  todoList
+        console.log(todoList[i] + "\n") //prints out element at index i of for loop with a new line
+    }
+
 }
 
 /**

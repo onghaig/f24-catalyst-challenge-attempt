@@ -20,7 +20,7 @@ For this project, you need only go from directory to directory. We give you the 
 
 ## Prerequesties + Setup
 
-Install Node.js: https://nodejs.org/en/download/package-manager
+Install Node.js: https://nodejs.org/en/download/package-mnpmanager
 
 You need some sort of code editor. VSCode is likely the easiest: https://code.visualstudio.com/download
 
